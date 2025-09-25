@@ -7,153 +7,116 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- HEADER START -->
 <header class="banner">
-  <div class="banner-inner">
+  <div class="container" style="display:flex;align-items:center;gap:18px;">
     <img class="avatar" id="avatar" src="avatar.png" alt="Mateeb Imam">
-    <div class="title-block">
+    <div class="title-block" style="min-width:0;">
       <h1>Mateeb Imam</h1>
       <p class="tagline">YouTube Growth Leader • Storyteller • Digital Strategist</p>
-      <p class="contact">📧 <a href="mailto:mateeb.imam@gmail.com">mateeb.imam@gmail.com</a> • 📱 +91-8430428534</p>
+      <div style="display:flex;gap:10px;align-items:center;font-size:14px;color:rgba(255,255,255,0.95);">
+        <span>📧 <a href="mailto:mateeb.imam@gmail.com" style="color:#fff;text-decoration:underline;">mateeb.imam@gmail.com</a></span>
+        <span>•</span>
+        <span>📱 <a href="tel:+918430428534" style="color:#fff;text-decoration:underline;">+91-8430428534</a></span>
+      </div>
     </div>
-    <button class="subscribe" onclick="location.href='#contact'">Hire / Connect</button>
+    <a class="subscribe" href="https://www.linkedin.com/in/mohd-mateeb-imam-073832142/" target="_blank" rel="noreferrer">Hire / Connect</a>
   </div>
 </header>
+<!-- HEADER END -->
 
-<nav class="tabs">
-  <button class="tab active" data-tab="home">Home</button>
-  <button class="tab" data-tab="videos">Videos</button>
-  <button class="tab" data-tab="playlists">Playlists</button>
-  <button class="tab" data-tab="community">Community</button>
-  <button class="tab" data-tab="about">About</button>
+<nav class="tabs container" aria-label="Navigation tabs">
+  <!-- Tabs kept YouTube-like but explicit -->
+  <button class="tab active" data-tab="home">Home <span style="font-weight:400;color:#666;">(Profile Summary)</span></button>
+  <button class="tab" data-tab="videos">Videos <span style="font-weight:400;color:#666;">(Experience & Impact)</span></button>
+  <button class="tab" data-tab="playlists">Playlists <span style="font-weight:400;color:#666;">(Skills & Tools)</span></button>
+  <button class="tab" data-tab="community">Community <span style="font-weight:400;color:#666;">(Teaching, RJ, NGO)</span></button>
+  <button class="tab" data-tab="about">About <span style="font-weight:400;color:#666;">(Education & Awards)</span></button>
 </nav>
 
-<main class="content">
-  <section id="home" class="tabcontent active">
-    <div class="card pinned">
-      <div class="thumb">🎯</div>
-      <div class="info">
-        <h2>Profile Summary</h2>
-        <p>Creative digital strategist with 6+ years leading YouTube growth. Heading 9 YouTube verticals at Drishti Group (~19M+ subscribers). Skilled in trend-driven storytelling, analytics, and community building. Award-winning actor and former RJ with strong cultural fluency.</p>
-        <ul class="metrics">
-          <li><strong>Channels:</strong> 9</li>
-          <li><strong>Combined subscribers:</strong> ~19M+</li>
-          <li><strong>Recent growth:</strong> +500K subs (Jan–Sept 2025)</li>
-        </ul>
-      </div>
-    </div>
+<main class="content container">
+  <!-- Left column -->
+  <div class="left-col">
 
-    <div class="cards-grid">
-      <div class="card">
-        <div class="thumb">📈</div>
+    <!-- HOME -->
+    <section id="home" class="tabcontent active">
+      <div class="card pinned">
+        <div class="thumb">🎯</div>
         <div class="info">
-          <h3>YouTube Growth</h3>
-          <p>Scaled Drishti IAS from 11M → 12.6M subscribers. Managed Shorts programming and trend activations.</p>
+          <h2>Profile Summary</h2>
+          <p>Creative digital strategist with 6+ years leading YouTube growth. Heading 9 YouTube verticals at Drishti Group (~19M+ subscribers). Skilled in trend-driven storytelling, analytics, Shorts programming and community building. Award-winning actor and former RJ with strong cultural fluency.</p>
+          <ul class="metrics">
+            <li><strong>Channels:</strong> 9</li>
+            <li><strong>Combined subscribers:</strong> ~19M+</li>
+            <li><strong>Recent growth:</strong> +500K subs (Jan–Sept 2025)</li>
+          </ul>
         </div>
       </div>
 
-      <div class="card">
-        <div class="thumb">🎭</div>
-        <div class="info">
-          <h3>Creative & Performance</h3>
-          <p>Theatre instructor (6+ years), award-winning actor (Filmsaaz 2010 & 2011), former RJ and jingle-writer.</p>
+      <!-- Highlight cards with thumbnails -->
+      <div class="cards-grid">
+        <div class="card">
+          <div class="thumb" aria-hidden="true">
+            <!-- SVG thumbnail for YouTube Growth -->
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" rx="4" fill="#FF0000"/>
+              <path d="M6 14l4-4 4 4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="info">
+            <h3>YouTube Growth</h3>
+            <p>Led growth across 9 verticals including Drishti IAS (12.6M). Designed trend-led campaigns and Shorts programming that added +500K subscribers in 2025 (Jan–Sept).</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="thumb" aria-hidden="true">
+            <!-- SVG thumbnail for Creative Performance -->
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" rx="4" fill="#FF9F1C"/>
+              <path d="M7 16c1-2 3-3 5-3s4 1 5 3" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="7" r="2" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="info">
+            <h3>Creative Performance</h3>
+            <p>Theatre instructor (6+ years), RJ & content writer — award-winning actor (Filmsaaz). Skilled in scripting, jingle writing, on-camera presentation and live/public speaking.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="thumb" aria-hidden="true">
+            <!-- SVG thumbnail for Social Impact -->
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" rx="4" fill="#2EC4B6"/>
+              <path d="M6 12h12M6 16h8" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="info">
+            <h3>Social Impact</h3>
+            <p>Mentor at Reap Benefit — designed civic & environmental youth campaigns, created content and mobilised communities via social media and YouTube.</p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <div class="thumb">🌱</div>
-        <div class="info">
-          <h3>Social Impact</h3>
-          <p>Mentor at Reap Benefit — designed civic campaigns, created social media and YouTube content to mobilise youth.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- VIDEOS -->
+    <section id="videos" class="tabcontent" aria-hidden="true">
+      <h2>Experience & Impact (Video-style cards)</h2>
+      <div class="video-grid">
+        <article class="video-card">
+          <div class="vthumb" aria-hidden="true">
+            <img src="avatar.png" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:6px;">
+          </div>
+          <div class="vmeta">
+            <h3>Sub Divisional Head – YouTube Content</h3>
+            <p><strong>Drishti Group</strong> (Apr 2025 – Present)</p>
+            <p>Head content strategy for 9 channels including Drishti IAS (12.6M), Drishti IAS English (3.53M), UPPCS (1.38M) and Drishti Shorts (732K). Run trend-aligned campaigns across long-form & Shorts; cross-functional leadership with anchors, creators and marketing teams.</p>
+            <p class="stat">+500K subs gained in 2025 (Jan–Sept)</p>
+          </div>
+        </article>
 
-  <section id="videos" class="tabcontent">
-    <h2>Experience (Video Cards)</h2>
-    <div class="video-grid">
-      <article class="video-card">
-        <div class="vthumb">🔴</div>
-        <div class="vmeta">
-          <h3>Sub Divisional Head – YouTube Content</h3>
-          <p><strong>Drishti Group</strong> (Apr 2025 – Present)</p>
-          <p>Heading 9 channels: Drishti IAS (12.6M), Drishti IAS English (3.53M), UPPCS (1.38M), CUET & CLAT (407K), Judiciary (118K), Shorts (732K), RAS (13.4K), Teaching (103K), SSC (160K).</p>
-          <p class="stat">+500K subs gained in 2025 (Jan–Sept)</p>
-        </div>
-      </article>
-
-      <article class="video-card">
-        <div class="vthumb">▶️</div>
-        <div class="vmeta">
-          <h3>Sub Divisional Head – YouTube Channels</h3>
-          <p><strong>Drishti IAS</strong> (Apr 2024 – Mar 2025)</p>
-          <p>Increased subscribers from 11M → 12M in under 10 months using trend-aligned campaigns and Shorts strategy.</p>
-        </div>
-      </article>
-
-      <article class="video-card">
-        <div class="vthumb">✍️</div>
-        <div class="vmeta">
-          <h3>HOD – Social Media & Innovations</h3>
-          <p><strong>Drishti IAS</strong> (Apr 2023 – Nov 2023)</p>
-          <p>Designed organic campaigns inspired by hashtags, memes and trending topics. Managed influencer tie-ups and paid campaigns.</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="playlists" class="tabcontent">
-    <h2>Skills (Playlists)</h2>
-    <div class="playlist-grid">
-      <div class="playlist">YouTube Analytics</div>
-      <div class="playlist">Trend Spotting</div>
-      <div class="playlist">Shorts Strategy</div>
-      <div class="playlist">Creative Writing & Jingles</div>
-      <div class="playlist">Public Speaking & Theatre</div>
-      <div class="playlist">Community Mobilisation</div>
-      <div class="playlist">Google Trends & SocialBlade</div>
-    </div>
-  </section>
-
-  <section id="community" class="tabcontent">
-    <h2>Community Posts</h2>
-    <div class="post">
-      <h3>Drama Instructor</h3>
-      <p>Sharda University & Al Barkaat University — taught theatre, performance workshops, and storytelling for 6+ years.</p>
-    </div>
-    <div class="post">
-      <h3>Radio Jockey & Content Writer</h3>
-      <p>Current 94.1 FM — wrote jingles, station promos, prank calls, and brand advertisements.</p>
-    </div>
-    <div class="post">
-      <h3>Mentor — Reap Benefit NGO</h3>
-      <p>Led civic/environmental campaigns; developed social media content, scripts, and edited videos to amplify youth-led solutions.</p>
-    </div>
-  </section>
-
-  <section id="about" class="tabcontent">
-    <h2>About</h2>
-    <p><strong>Education</strong></p>
-    <ul>
-      <li>PG Diploma in Radio & TV Journalism – Bhartiya Vidya Bhavan, New Delhi</li>
-      <li>BA – Aligarh Muslim University</li>
-    </ul>
-    <p><strong>Awards</strong></p>
-    <ul>
-      <li>Best Actor (Male) — "Freedom a Mistake", Filmsaaz 2010</li>
-      <li>Best Actor Jury Mention — "Mysticus", Filmsaaz 2011</li>
-    </ul>
-
-    <p id="contact" class="contact-section"><strong>Contact</strong><br/>
-    📧 <a href="mailto:mateeb.imam@gmail.com">mateeb.imam@gmail.com</a><br/>📱 +91-8430428534<br/>
-    🔗 <a href="https://www.youtube.com/watch?v=R76cK8rLbVM" target="_blank">YouTube Sample</a></p>
-  </section>
-</main>
-
-<footer class="footer">
-  <p>Mock YouTube CV — designed for application to YouTube/Google roles. Created by Mateeb Imam.</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+        <article class="video-card">
+          <div class="vthumb" aria-hidden="true">
+            <div style="font-size:20px;color:#ff0000">▶️</div>
+          </div>
